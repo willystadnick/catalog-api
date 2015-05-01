@@ -60,6 +60,7 @@ class ProductController extends Controller {
             $product = new Product;
             $product->titulo = Input::get('titulo');
             $product->preco = Input::get('preco');
+            $product->thumbnail = Input::get('thumbnail');
             $product->category_id = Input::get('category');
             $product->save();
 
@@ -123,7 +124,8 @@ class ProductController extends Controller {
 
         	if ($product) {
 	            $product->titulo = Input::get('titulo');
-	            $product->preco = Input::get('preco');
+                $product->preco = Input::get('preco');
+	            $product->thumbnail = Input::get('thumbnail');
 	            $product->category_id = Input::get('category');
 	            $product->save();
 

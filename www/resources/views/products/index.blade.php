@@ -13,6 +13,7 @@
             <td>Título</td>
             <td>Slug</td>
             <td>Preço</td>
+            <td>Thumbnail</td>
             <td>Actions</td>
         </tr>
     </thead>
@@ -22,6 +23,7 @@
             <td>{{ $value->titulo }}</td>
             <td>{{ $value->slug }}</td>
             <td>{{ $value->preco }}</td>
+            <td>{{ $value->thumbnail }}</td>
             <td>
                 <a href="{{ URL::to('products/' . $value->id) }}">Show</a>
                 <a href="{{ URL::to('products/' . $value->id . '/edit') }}">Edit</a>

@@ -25,6 +25,11 @@
         {!! Form::select('category', $categories) !!}
     </div>
 
+    <div>
+        {!! Form::label('thumbnail', 'Thumbnail') !!}
+        {!! Form::text('thumbnail', Input::old('thumbnail')) !!}
+    </div>
+
     {!! Form::submit('Edit') !!}
 
 {!! Form::close() !!}

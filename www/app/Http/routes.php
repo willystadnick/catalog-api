@@ -23,3 +23,9 @@ Route::controllers([
 Route::resource('categories', 'CategoryController');
 
 Route::resource('products', 'ProductController');
+
+Route::get('/categorias', 'ApiController@categorias');
+
+Route::get('/produtos', 'ApiController@produtos');
+
+Route::get('/produto/{id}', 'ApiController@produto');

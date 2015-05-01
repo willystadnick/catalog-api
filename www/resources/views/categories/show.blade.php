@@ -4,6 +4,8 @@
 
 <p><b>Título:</b> {{ $category->titulo }}</p>
 <p><b>Slug:</b> {{ $category->slug }}</p>
+<p><b>Produtos:</b> {{ $category->products->implode('titulo', ', ') }}</p>
+
 <p>
     <a href="{{ URL::to('categories/' . $category->id . '/edit') }}">Edit</a>
     {!! Form::open(array('url' => 'categories/' . $category->id)) !!}

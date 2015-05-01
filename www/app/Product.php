@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\SluggableInterface;
 use Cviebrock\EloquentSluggable\SluggableTrait;
 
-class Category extends Model implements SluggableInterface {
+class Product extends Model implements SluggableInterface {
 
     use SluggableTrait;
 
@@ -14,9 +14,8 @@ class Category extends Model implements SluggableInterface {
         'on_update' => true,
     );
 
-    public function products()
+    public function category()
     {
-        return $this->hasMany('App\Product');
+        return $this->belongsTo('App\Category');
     }
-
 }

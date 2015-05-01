@@ -21,3 +21,5 @@ Route::controllers([
 ]);
 
 Route::resource('categories', 'CategoryController');
+
+Route::resource('products', 'ProductController');

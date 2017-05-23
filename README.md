@@ -1,4 +1,4 @@
-#Avaliação técnica Backend - DIV64
+# Avaliação técnica - Desenvolvedor Backend - DIV64
 
 O objetivo desta avaliação é observarmos sua capacidade de organização, atenção ao código, atenção aos requisitos e qualidade geral da aplicação. A tarefa é bastante simples: criar um CRUD de um catálogo e servir os dados via API.
 
@@ -14,14 +14,14 @@ A aplicação não precisa conter:
 
 Para o desenvolvimento da aplicação você pode implementar a tecnologia que achar mais relevante, desde que seja PHP. Utilize o MySQL como banco de dados.
 
-##Entregáveis
+## Entregáveis
 - Código fonte da aplicação.
 - Documentação da aplicação e da API.
 
-##API de dados
+## API de dados
 A API apenas fornece informações. você deve implementar os seguintes endpoints para consulta de dados, respeitando os formatos de dados abaixo:
 
-###Categorias
+### Categorias
 Endpoint: /categorias
 
 Formato de dados:
@@ -36,7 +36,7 @@ Formato de dados:
 	{...}
 ]
 ```
-###Produtos
+### Produtos
 Endpoint: /produtos
 
 Formato de dados:
@@ -52,7 +52,7 @@ Formato de dados:
 	{...}
 ]
 ```
-###Produto
+### Produto
 Endpoint: /produto/:id
 
 Formato de dados:
@@ -66,26 +66,26 @@ Formato de dados:
 }
 ```
 
-##O que será observado
+## O que será observado
 - Código PHP (PSR-x, lógica, coerência, técnicas, metodologias)
 - Estrutura e queries MySQL
 - Organização (Namespaces, estrutura de diretórios)
 - Gerenciamento (gerenciadores de pacote, integração da aplicação com frameworks)
 - Interação com Git (commits, workflow)
 
-##Método
+## Método
 - Crie um fork deste repositório na sua própria conta.
 - Armazene sua aplicação no diretório 'www',
 - Gerencie seu repositório da forma que achar conveniente.
 - Uma vez concluído, deixe sua última versão na branch master.
 - Envie (por email) o link do seu repositório acompanhado de instruções para deploy local, para que possamos avaliar.
 
-##Encorajamos
+## Encorajamos
 - Uso de gerenciadores de pacotes (Composer, PEAR)
 - Task runners (Grunt, Gulp)
 - Gitflow
 
-##Prazo
+## Prazo
 - A janela para desenvolvimento inicia-se hoje, 9/03, e extende-se até o dia 14/03 às 9h.
 - No dia 14, a partir das 9h, iniciaremos as avaliações e nenhum commit será aceito após esse horário.
 - Qualquer dificuldade técnica deve ser informada o quanto antes, para que tenhamos tempo de auxiliar e não prejudicar o desempenho do candidato.
